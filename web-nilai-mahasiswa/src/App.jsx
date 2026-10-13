@@ -2,14 +2,14 @@ import { useState } from "react";
 
 const dataNilai = {
   "Danil Meikova": { password: "Danil123", nilai: 97 },
-  "Kocheng": { password: "KucingPutih", nilai: 80 },
+  "Monica": { password: "KucingPutih", nilai: 80 },
   "101223": { password: "101223via", nilai: 71 },
   "101224": { password: "101224via", nilai: 65 },
 };
 
 function tentukanGrade(nilai) {
   if (nilai >= 90) return "Semangat Sayang UTBK-nya";
-  if (nilai >= 80) return "Hai Ibu";
+  if (nilai >= 80) return "Afh Kabar Kak";
   if (nilai >= 70) return "C";
   if (nilai >= 60) return "D";
   return "E";
@@ -47,7 +47,7 @@ export default function App() {
     setPassword("");
     setPesan(
       sisa > 0
-        ? `NPM atau password salah. Sisa kesempatan: ${sisa}`
+        ? `Nama atau password salah. Sisa kesempatan: ${sisa}`
         : "Kesempatan login habis. Akses diblokir."
     );
   }
@@ -68,7 +68,7 @@ export default function App() {
         <p className="eyebrow">MASIH DALAM PERKEMBANGAN PUH</p>
         <h1>Portal Nilai Mahasiswa</h1>
         <p className="subtitle">
-          Masukkan NPM dan password untuk melihat nilai serta grade.
+          Masukkan Nama dan password untuk melihat nilai serta grade.
         </p>
         <div className="attempts">
           Kesempatan login tersisa: <strong>{kesempatan}</strong>
@@ -82,7 +82,7 @@ export default function App() {
             <p className="muted">Silakan isi data akun dengan benar.</p>
 
             <form onSubmit={login}>
-              <label htmlFor="npm">NPM</label>
+              <label htmlFor="npm">Nama</label>
               <input
                 id="npm"
                 value={npm}
