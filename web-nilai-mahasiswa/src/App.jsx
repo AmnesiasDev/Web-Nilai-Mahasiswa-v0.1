@@ -8,7 +8,7 @@ const dataNilai = {
 };
 
 function tentukanGrade(nilai) {
-  if (nilai >= 90) return "Semangat Sayang";
+  if (nilai >= 90) return "Semangat Sayang UTBK-nya";
   if (nilai >= 80) return "B";
   if (nilai >= 70) return "C";
   if (nilai >= 60) return "D";
