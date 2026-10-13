@@ -2,14 +2,14 @@ import { useState } from "react";
 
 const dataNilai = {
   "Danil Meikova": { password: "Danil123", nilai: 97 },
-  "101222": { password: "101222via", nilai: 80 },
+  "Kocheng": { password: "KucingPutih", nilai: 80 },
   "101223": { password: "101223via", nilai: 71 },
   "101224": { password: "101224via", nilai: 65 },
 };
 
 function tentukanGrade(nilai) {
   if (nilai >= 90) return "Semangat Sayang UTBK-nya";
-  if (nilai >= 80) return "B";
+  if (nilai >= 80) return "Hai Ibu";
   if (nilai >= 70) return "C";
   if (nilai >= 60) return "D";
   return "E";
